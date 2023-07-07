@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +9,331 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    z-index: 3;
 }
-body{
+body{    /* background  */
     background-color: black;
+}
+header{
+    width: auto;
+    height: 700px;
+    position: relative;
+    background-image: url(./img/background.png);
+}
+header::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 60.00%, rgba(0, 0, 0, 0.80) 100%), rgba(0, 0, 0, 0.40);
+}
+
+
+nav{
+    max-width: 1170px;
+    height: 86px;
+    margin: 0px auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-betw;
+    
+}
+
+
+.I__nav-bar{
+    margin: 0px 32px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.I__black{
+
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 60.00%, rgba(0, 0, 0, 0.80) 100%), rgba(0, 0, 0, 0.40);
+}
+
+
+/* .form-select{
+    width: 130px;
+    height: 32px;
+} */
+
+
+.form-select{
+/*     margin: 27px 0px 27px 0px;
+ */    color: #FFF;
+/* font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; */
+}
+
+#form-select{
+    margin: 0px -36px 0px -36px;
+    padding: 0px 36px  0px 36px;
+    background: transparent;
+    z-index: 4;
+
+}
+
+.I__btn__down{
+    padding: 9px 12.8px 7px 7px;
+    z-index: 0;
+
+
+} 
+option, .form-select{
+
+ /* border-radius: 4px;
+border: 1px solid rgba(128, 128, 128, 0.70); */
+background: rgba(22, 22, 22, 0.70);
+border: 0px;
+padding: 0px 0px 0px 0px;
+--bs-form-select-bg-img: none;
+}
+
+
+
+.I__globus{
+    margin: 6px 8px 6px 12px;
+}
+.I__logo{
+    margin: 23px 0px 23px 0px;
+}
+
+/* .I__login{
+} */
+
+.I__btn__login{
+    margin: 27px 0px 27px 0px;
+
+    border-radius: 4px;
+    background: #E50914;
+    padding: 8.6px 17.06px 9.4px 16px;
+    
+    width: 74px;
+    height: 32px;
+
+
+    color: #FFF;
+font-family: Segoe UI;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px;
+
+}
+
+.I__box__header{
+    display: flex;
+    gap: 40px;
+}
+
+.I__Title{
+    margin-top: 158.2px;
+    
+    color: #FFF;
+text-align: center;
+font-family: Segoe UI;
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.I__subtitle__1{
+    margin-top: 16.8px;
+    color: #FFF;
+text-align: center;
+font-family: Segoe UI;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.I__subtitle__2{
+    margin-top: 23.6px;
+    color: #FFF;
+text-align: center;
+font-family: Segoe UI;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+}
+
+.I__email__box > .form-floating.mb-3{
+    width: 422.75px;
+    height: 56px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.70);
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+
+.form-control{
+    border: 1px solid rgba(128, 128, 128, 0.70);
+    background: rgba(22, 22, 22, 0.70); 
+
+}
+
+.I__email__box > #floatingInput{
+    border: 1px solid rgba(128, 128, 128, 0.70);
+    background: rgba(22, 22, 22, 0.70);
+    color: rgba(255, 255, 255, 0.70);
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+
+}
+
+#I__email__box{
+    margin-top: 16.4px;
+}
+/* .I__start {
+} */
+
+.I__btn__start {
+    margin-top: 16.4px;
+    border-radius: 4px;
+    background: #E50914;
+    color: #FFF;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 155.25px;
+    height: 56px;
+}
+
+.I__email__box{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.I__box__select{
+    display: flex;
+    margin-top: 27px;
+    width: 152px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.70);
+    background: rgba(22, 22, 22, 0.70);
+}
+
+
+
+.modal.fade{
+    z-index: 4;
+}
+
+.modal-backdrop.fade.show{
+    display: none;
+}
+
+.modal-body{
+    padding: 58px 68px 40px 68px;
+
+    border-radius: 4px;
+    /* background: rgba(0, 0, 0, 0.75); */
+    border: 0;
+    border-radius: 0;
+    
+    
+}
+#exampleModalLabel{
+    color: #FFF;
+    font-family: Segoe UI;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+
+}
+.modal-body{
+    border-radius: 4px;
+background: rgba(0, 0, 0, 0.75);
+    border: 0;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+
+.I__modal__box > .form-floating{
+    margin: 0px auto;
+    margin-top: 27.8px;
+    border-radius: 4px;
+background: #333;
+color: #8C8C8C;
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 314px;
+}
+
+.modal-footer{
+    border-radius: 4px;
+background: rgba(0, 0, 0, 0.75);
+    border: 0;
+    border-radius: 0;
+}
+
+.I__btn__log_in{
+    margin: 0px 23.4px;
+    margin-top: 55.6px;
+    border-radius: 4px;
+background: #E50914;
+box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.55);
+display: inline-flex;
+min-width: 98px;
+max-width: 314px;
+min-height: 37px;
+padding: 15.6px 132.99px 16.4px 134.01px;
+align-items: flex-start;
+color: #FFF;
+text-align: center;
+font-family: Segoe UI;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+.fs-5{
+    font-size: 32px;
+}
+
+.form-check-label , .form-check-input {
+    color: #B3B3B3;
+font-family: Segoe UI;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 15.6px;
+}
+
+.form-check-input {
+    color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px;
+}
+
+#I__help{
+    margin-left: 79.7px;
 }

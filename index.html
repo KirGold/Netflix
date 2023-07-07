@@ -3,27 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+    <title>Netflix Україна: дивіться телесеріали й фільми онлайн</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
 </head>
 <body>
     <header>
+        <nav>
+            <div class="I__nav-bar">
+                <a class="navbar-brand" href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="148" height="40" viewBox="0 0 149 41" fill="none" class="I__logo">
+                        <path d="M140.195 19.83L148.111 40.7891C145.778 40.4554 143.446 40.038 141.07 39.6631L136.611 28.0807L132.028 38.7058C129.779 38.3309 127.569 38.2047 125.32 37.9135L133.362 19.58L126.07 0.789124H132.821L136.904 11.2881L141.279 0.789124H148.111L140.195 19.83ZM120.737 0.789124H114.612V37.1224C116.612 37.2474 118.695 37.3299 120.737 37.5798V0.789124ZM109.32 36.705C103.737 36.3301 98.1533 35.9977 92.4458 35.8715V0.789124H98.6944V29.9552C102.279 30.039 105.862 30.3302 109.32 30.4964V36.705ZM85.7785 14.9973V21.2471H77.2379V35.4553H71.0705V0.789124H88.5704V7.03901H77.2379V14.9973H85.7785ZM60.5703 7.03901V35.789C58.487 35.789 56.3624 35.789 54.3204 35.8715V7.03901H47.8618V0.789124H67.0701V7.03901H60.5703ZM41.112 21.5796C38.3626 21.5796 35.1121 21.5796 32.7788 21.7058V30.9975C36.4455 30.7463 40.1122 30.4551 43.8202 30.3302V36.3301L26.529 37.706V0.789124H43.8202V7.03901H32.7788V15.4547C35.1958 15.4547 38.9038 15.3297 41.112 15.3297V21.5796ZM6.4871 18.0803V39.9131C4.23759 40.1643 2.23678 40.4554 0.112244 40.7891V0.789124H6.07094L14.1954 23.4979V0.789124H20.4453V38.2047C18.237 38.5809 15.9875 38.7058 13.6118 39.0383L6.4871 18.0803Z" fill="#E50914"/>
+                    </svg> 
+                </a>
+                <div class="I__box__header">
+                    <div class="I__box__select">
+                        <div class="I__box__globus">
+                            <img src="./img/globus.svg" class="I__globus" width="16px" height="16px" alt="Error">
+                        </div>
+                        <select class="form-select" id="form-select" aria-label="Default select example">
+                            <img src="./img/globus.svg" alt="">
+                        <option selected>Українська</option>
+                        <option value="1">English</option>
+                        <option value="2">Dansk</option>
+                        </select>
+                        <img class="I__btn__down" src="./img/button__down.svg" alt="Error">
+                            
+                    </div>
+                    <a href="#" class="I__login"> 
+                        <button type="button" class="btn btn-primary I__btn__login" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Увійти
+                        </button>
+                    </a>
+                    
+                        
+                        
+                    
+                </div>
+            </div>
+        </nav>
         
+        <h1 class="I__Title">Фільми, серіали й інший контент без   обмежень</h1>
+        <p class="I__subtitle__1">Дивіться будь-де. Скасувати підписку можна будь-коли.</p>
+        <p class="I__subtitle__2">Готові до перегляду? Введіть адресу електронної пошти, щоб оформити або поновити підписку.</p>
+        <div class="I__black"></div>
+        <div class="I__email__box">
+            <div class="form-floating mb-3" id="I__email__box">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Адреса електронної пошти</label>
+            </div>
+            <a href="#" class="I__start"> 
+                <button class="I__btn__start">Почати</button>
+                <img src="" alt="">
+            </a>
+        </div> 
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-=======
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- <div class="modal-header">
+            </div> -->
+            <div class="modal-body">
+                <div class="I__modal__box">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Увійти</h1>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>  
+                      <a href="#" class="I__log_in"> 
+                        <button class="I__btn__log_in">Увійти</button>
+                        <img src="" alt="">
+                    </a>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Запам’ятати мене
+                        </label>
+                        <label class="form-check-label" id="I__help">
+                            Потрібна допомога?
+                        </label>
 
-=======
-    <div class="box">
-        <h1>Netflix</h1>
-        <h5>Hello!</h5>
-    </div>
->>>>>>> 19aafe34765c3751461bf888d62b4295a4422043
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
 
+
+
+
+
+
+
+
+
+
+    
     <div class="k-main-box">
-
+        
     </div>
->>>>>>> 55629b4d48474158eada5154a919b8e359be4574
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <!--Kir__Main-body-->
+    <main>  
+        <div class="k-main-box">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
