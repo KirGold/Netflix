@@ -341,13 +341,23 @@ line-height: 21.6px;
 
         /* S - start */
 
-        footer {
+        .footer {
+            margin-top: 100px;
             display: flex;
             flex-direction: column;
             max-width: 1200px;
             position: relative;
             left: 20%;
             align-items: start;
+        }
+        .footer::before{
+            position: absolute;
+            content: '';
+            width: 151%;
+            height: 3px;
+            background-color: #8c8c8c52;
+            left: -50%;
+            top: -35px;
         }
         .S__footer__text {
             color: #c7c7c7e8;
@@ -364,7 +374,7 @@ line-height: 21.6px;
         .S__footer__box__list {
             display: flex;
             flex-direction: column;
-            margin-right: 90px;
+            margin-right: 80px;
         }
         .S__footer__box__list__point {
             color: #c7c7c7e8;
@@ -373,7 +383,7 @@ line-height: 21.6px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 800px;
+            width: 900px;
             margin: 30px 0;
         }
         .S__footer__box__text {
