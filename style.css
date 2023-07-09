@@ -19,6 +19,7 @@ header{
     height: 700px;
     position: relative;
     background-image: url(./img/background.png);
+    background-size: cover;
 }
 header::before{
     position: absolute;
@@ -86,7 +87,6 @@ line-height: 20px; */
 
 } 
 option, .form-select{
-
  /* border-radius: 4px;
 border: 1px solid rgba(128, 128, 128, 0.70); */
 background: rgba(22, 22, 22, 0.70);
@@ -248,11 +248,15 @@ line-height: 24px;
     padding: 58px 68px 40px 68px;
 
     border-radius: 4px;
-    /* background: rgba(0, 0, 0, 0.75); */
     border: 0;
     border-radius: 0;
     
     
+}
+
+.modal-content{
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.75);
 }
 #exampleModalLabel{
     color: #FFF;
@@ -326,14 +330,19 @@ line-height: 15.6px;
 }
 
 .form-check-input {
+    background-color: #747474;
     color: #000;
 font-family: Inter;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 21.6px;
+border: 0;
 }
-
+.form-check-input:checked{
+    background-color: #747474;
+    border: 0;
+}
 #I__help{
-    margin-left: 79.7px;
+    margin-left: 59.7px;
 }
