@@ -11,17 +11,15 @@
     text-decoration: none;
     z-index: 3;
 }
-body{    /* background  */
+ /* background  */
+body{   
     background-color: black;
 }
 <<<<<<< HEAD
 
 .k-main-box{
-    width: 750px;
+    width: 350px;
     margin: 0 auto;
-}
-.carousel-item{
-
 }
 .k-carousel__titel {
     font-family: 'Russo One', sans-serif;
