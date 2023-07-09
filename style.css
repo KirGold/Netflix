@@ -9,26 +9,15 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-    z-index: 3;
 }
  /* background  */
 body{   
     background-color: black;
 }
-<<<<<<< HEAD
-
 .k-main-box{
-    width: 350px;
+    width: 800px;
     margin: 0 auto;
 }
-.k-carousel__titel {
-    font-family: 'Russo One', sans-serif;
-    font-size: 25px;
-}
-.k-carousel__text {
-    font-family: 'Open Sans', sans-serif;
-}
-=======
 header{
     width: auto;
     height: 700px;
@@ -410,4 +399,4 @@ line-height: 21.6px;
             width: 30px;
             height: 30px;
         }
->>>>>>> 32b43614fac3b9419a7339db24dd464e4f52ea0c
+        
