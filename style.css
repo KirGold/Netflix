@@ -10,3 +10,18 @@
 body{
     background-color: black;
 }
+
+.k-main-box{
+    width: 750px;
+    margin: 0 auto;
+}
+.carousel-item{
+
+}
+.k-carousel__titel {
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+}
+.k-carousel__text {
+    font-family: 'Open Sans', sans-serif;
+}
