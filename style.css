@@ -50,7 +50,7 @@ header::before{
   border-radius: 4px; 
   border: none; 
   color: white; 
-  font-size: 14px;
+  font-size: 10px;
 } 
 .form-floating > .form-control-plaintext ~ label::after, 
 .form-floating > .form-control:focus ~ label::after, 
@@ -168,8 +168,9 @@ line-height: 14px;
 }
 
 .I__Title{
+    margin: 0px auto;
     margin-top: 158.2px;
-    
+    padding: 0px 20px ;
     color: #FFF;
 text-align: center;
 font-family: Segoe UI;
@@ -182,6 +183,8 @@ line-height: normal;
 .I__subtitle__1{
     margin-top: 16.8px;
     color: #FFF;
+    padding: 0px 20px ;
+
 text-align: center;
 font-family: Segoe UI;
 font-size: 24px;
@@ -191,6 +194,8 @@ line-height: normal;
 }
 
 .I__subtitle__2{
+    padding: 0px 20px ;
+
     margin-top: 23.6px;
     color: #FFF;
 text-align: center;
@@ -207,7 +212,7 @@ line-height: 30px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.70);
 font-family: Segoe UI;
-font-size: 16px;
+font-size: 10px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px;
@@ -506,6 +511,10 @@ line-height: normal;
             width: 30px;
             height: 30px;
         }
+<<<<<<< HEAD
+=======
+wsqfrgt
+>>>>>>> 9aacf416e2501263c188e59c4a7f6f59df4d6227
 body{    /* background  */
     background-color: black;
 }
@@ -843,3 +852,69 @@ border: 0;
 #I__help{
     margin-left: 59.7px;
 }
+
+/* Стилі для дуже великих екранів (дисплей 1200рх і більше).
+Записуються без медіа-запитів, тому що контрольна точка не має верхньої межі. */
+
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) {
+
+}
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+    @media (max-width: 991px) { 
+        
+.I__Title{
+font-size: 42px;
+}
+
+.I__subtitle__1{
+    margin-top: 12.8px;
+    padding: 0px 20px ;
+font-size: 20px;
+}
+
+.I__subtitle__2{
+    padding: 0px 20px ;
+
+    margin-top: 20.6px;
+font-size: 18px;
+}
+
+    }
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+    @media (max-width: 767px) { 
+        .I__btn__start{
+            font-size: 0px;
+            width: 50px;
+        }
+        .I__box__select{
+            display: none;
+        }
+        .I__email__box{
+            padding: 0px 50px;
+        }
+    }
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+    @media (max-width: 575px) { 
+        .I__Title{
+            font-size: 36px;
+            }
+            
+            .I__subtitle__1{
+                margin-top: 8.8px;
+                padding: 0px 20px ;
+            font-size: 16px;
+            }
+            
+            .I__subtitle__2{
+                padding: 0px 20px ;
+            
+                margin-top: 16.6px;
+            font-size: 14px;
+            }
+            
+                
+    }
