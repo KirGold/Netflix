@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Україна: дивіться телесеріали й фільми онлайн</title>
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -76,18 +77,18 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Увійти</h1>
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <label for="floatingInput">Електронна адреса або мобільний телефон</label>
                       </div>
                       <div class="form-floating">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <label for="floatingPassword">Пароль</label>
                       </div>  
                       <a href="#" class="I__log_in"> 
                         <button class="I__btn__log_in">Увійти</button>
                         <img src="" alt="">
                     </a>
                     <div class="form-check" style="
-                    margin-left: 20px;"
+                    margin: 14.4px 0px 0px 30px;"
                 >
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
@@ -96,7 +97,13 @@
                         <label class="form-check-label" id="I__help">
                             Потрібна допомога?
                         </label>
-
+                        <div class="I__regist__box">
+                            <p class="I__regist-text">Уперше на Netflix? <a href="./index.html" class="I__registr-link"> Зареєструватися. </a></p>
+                        </div>
+                        <div class="I__info__box">
+                            <p class="I__info-text">Щоб переконатися, що ви не бот, сторінка <br>захищена системою Google reCAPTCHA.   <br> <button onclick="myFunction()" id="myClass" class="myStyle">Докладніше.</button></p>
+                            <p id="demo"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -169,7 +176,20 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    /* function myFunction() {
+    } */
+    function myFunction() {
+        document.getElementById("myClass").innerHTML = "Інформація, зібрана за допомогою Google reCAPTCHA, регулюється політикою конфіденційності та умовами використання Google і використовується для надання, підтримки та покращення служби reCAPTCHA та для загальних цілей безпеки (вона не використовується для персоналізованої реклами Google).";
+        const element = document.getElementById("myClass");
+        if (element.className == "myStyle") {
+            element.className = "newStyle";
+        } else {
+            element.className = "newStyle";
+        }
+}
+</script>
 
     <footer class="footer">
         <p class="S__footer__text">Маєте запитання? Зателефонуйте за номером <a class="S__footer__text__link" href="">0800-509-416</a></p>
