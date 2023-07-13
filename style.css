@@ -11,7 +11,7 @@
     text-decoration: none;
     
 }
- /* background  */
+
 body{   
     background-color: black;
 }
@@ -23,7 +23,7 @@ body{
 }
 header{
     width: auto;
-    height: 700px;
+    height: 100vh;
     position: relative;
     background-image: url(./img/background.png);
     background-size: cover;
@@ -857,39 +857,3 @@ border: 0;
 #I__help{
     margin-left: 59.7px;
 }
-<<<<<<< HEAD
->>>>>>> eb9afdf5d7e5c46e5199ab0dc16474dd9553dc0d
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 9ccd586f8936cfd9300bbfa75092ed1d3ffe5cd6
