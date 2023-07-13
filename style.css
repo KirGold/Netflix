@@ -9,10 +9,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
-<<<<<<< HEAD
-=======
     
->>>>>>> eb9afdf5d7e5c46e5199ab0dc16474dd9553dc0d
 }
  /* background  */
 body{   
@@ -30,7 +27,6 @@ header{
     position: relative;
     background-image: url(./img/background.png);
     background-size: cover;
-    display: flex;
     z-index: 3;
 }
 #header{
@@ -458,13 +454,13 @@ line-height: normal;
         /* S - start */
 
         .footer {
-            margin-top: 100px;
             display: flex;
+            align-items: start;
             flex-direction: column;
             max-width: 1200px;
-            position: relative;
             left: 20%;
-            align-items: start;
+            margin-top: 100px;
+            position: relative;
         }
         .footer::before{
             position: absolute;
@@ -499,7 +495,7 @@ line-height: normal;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 900px;
+            width: 65%;
             margin: 30px 0;
         }
         .S__footer__box__text {
@@ -511,10 +507,6 @@ line-height: normal;
             width: 30px;
             height: 30px;
         }
-<<<<<<< HEAD
-        
-=======
->>>>>>> 32b43614fac3b9419a7339db24dd464e4f52ea0c
 
 
 
@@ -865,6 +857,7 @@ border: 0;
 #I__help{
     margin-left: 59.7px;
 }
+<<<<<<< HEAD
 >>>>>>> eb9afdf5d7e5c46e5199ab0dc16474dd9553dc0d
 
 
@@ -898,3 +891,5 @@ border: 0;
 
 
 
+=======
+>>>>>>> 9ccd586f8936cfd9300bbfa75092ed1d3ffe5cd6
