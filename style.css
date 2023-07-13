@@ -15,11 +15,16 @@
 body{   
     background-color: black;
 }
-<<<<<<< HEAD
 
 .k-main-box{
+    position: relative;
     width: 800px;
     margin: 0 auto;
+    max-width: 1200px;
+}
+.k-main-box__2{
+    position: absolute;
+    visibility: hidden;
 }
 header{
     width: auto;
@@ -29,6 +34,7 @@ header{
     background-size: cover;
     z-index: 3;
 }
+
 #header{
     z-index: 2;
 }
@@ -851,12 +857,17 @@ border: 0;
 
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
-
 }
 
 /* Стилі для середніх екранів (дисплей максимум 991рх) */
     @media (max-width: 991px) { 
-
+        .k-main-box{
+            visibility: hidden;
+        }
+        .k-main-box__2{
+            visibility: visible;
+            height: 1000px;
+        }
     }
 
 /* Стилі для малих екранів (дисплей максимум 767рх) */
